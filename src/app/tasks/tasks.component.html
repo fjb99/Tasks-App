@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <h3 class="navbar-brand">Tasks Manager</h3>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" (click)="open()">New Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div>
+  <ul>
+    <li *ngFor="let task of tasks$ | async">
+      {{ task.title }}
+      {{ task.description}}
+      <button (click)="delete(task.id)">Remove</button>
+      <button (click)="update(task)">Update</button>
+    </li>
+
+  </ul>
+</div>
+

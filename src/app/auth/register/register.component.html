@@ -1,0 +1,30 @@
+
+<form class="mt-5" [formGroup]="registerForm">
+  <img src="https://ikubinfo.al/wp-content/uploads/2020/05/ikublogo.png" class="img-fluid" alt="...">
+  <div class="mb-3">
+    <label for="email" class="form-label">
+      Email address
+    </label>
+    <input id="email" type="text"  class="form-control" formControlName="email" placeholder="Enter email">
+  </div>
+
+  <div class="mb-3">
+    <label for="password">
+      Password
+    </label>
+    <input id="password" class="form-control" type="text" formControlName="password" placeholder="Password">
+  </div>
+
+  <div class="mb-3">
+    <label for="confirmPassword">Confirm Password</label>
+    <input class="form-control" id="confirmPassword" type="text" formControlName="confirmPassword"
+           placeholder="Confirm entered password">
+  </div>
+
+  <button class="btn btn-primary my-2" type="submit">Submit</button>
+
+  <div class="form-group">
+    <small class="font-weight-bold">Don't have an account? <a class="text-danger" routerLink="/auth/login">Login</a></small>
+  </div>
+
+</form>

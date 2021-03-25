@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "finalapp-3d8d6": {
+      "hosting": {
+        "finalApp": [
+          "finalapp-3d8d6"
+        ]
+      }
+    }
+  }
+}

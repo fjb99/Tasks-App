@@ -1,0 +1,10 @@
+.error-alert {
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.31);
+  color: red;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+}
